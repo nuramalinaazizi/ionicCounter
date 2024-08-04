@@ -7,6 +7,18 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  counter: number = 0
+  constructor() { }
 
+  incrementPressed() {
+    this.counter++
+  }
+
+  decrementPressed() {
+    this.counter--
+  }
+
+  decrementReset() {
+    this.counter = 0
+  }
 }
